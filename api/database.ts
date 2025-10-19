@@ -10,7 +10,7 @@ if (!serviceAccountJson) {
     throw new Error("FIREBASE_KEY_JSON no está configurada en Render");
 }
 
-const databaseUrl = String(process.env.DATABASE_URL).trim(); 
+const databaseUrl = String(process.env.DATABASE_URL).trim().replace(/"/g, ''); 
 
 if (!databaseUrl) {
     throw new Error("DATABASE_URL no está configurada correctamente o está vacía.");

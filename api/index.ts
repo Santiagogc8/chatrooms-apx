@@ -1,8 +1,11 @@
-import { firestore, rtdb } from './database.js'; // Hacemos la importacion de firestore y la realtime database
-import express from 'express'; // Hacemos la importacion de express
-import cors from 'cors'; // Importamos cors para que no tengamos problemas con la conexion en local
-import { nanoid } from 'nanoid'; // Importamos nano id para nuestros id
-import path from 'path'; // Usamos path para manejar rutas de archivos
+const database = require('./database.js'); // Usamos require()
+const express = require('express');
+const cors = require('cors');
+const { nanoid } = require('nanoid');
+const path = require('path');
+
+const firestore = database.firestore;
+const rtdb = database.rtdb;
 
 const app = express(); // Inicializamos express
 const port = 3000; // Y establecemos nuestro puerto
