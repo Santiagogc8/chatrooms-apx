@@ -4,6 +4,7 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "allowSyntheticDefaultImports": true,
-        "outDir": "./dist_server"
+        "outDir": "./dist_server",
+        "module": "CommonJS"
     }
 }
