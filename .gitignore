@@ -3,3 +3,4 @@ key.json
 .env
 .parcel-cache
 dist
+.DS_Store
