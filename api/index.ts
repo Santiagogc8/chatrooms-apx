@@ -171,7 +171,7 @@ app.post('/rooms/:roomId/messages', (req, res) => {
 
 // Determinamos la ruta absoluta a la carpeta 'dist' del frontend
 // __dirname es 'chatrooms/api'. Subimos (..) y entramos a 'frontend/dist'
-const staticPath = path.join(__dirname, '..', 'frontend', 'dist');
+const staticPath = path.join(__dirname, '..', '..', 'frontend', 'dist');
 
 // Usamos express.static para servir la carpeta compilada
 app.use(express.static(staticPath));
