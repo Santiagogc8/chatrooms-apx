@@ -10,12 +10,18 @@ if (!serviceAccountJson) {
     throw new Error("FIREBASE_KEY_JSON no está configurada en Render");
 }
 
+const databaseUrl = String(process.env.DATABASE_URL).trim(); 
+
+if (!databaseUrl) {
+    throw new Error("DATABASE_URL no está configurada correctamente o está vacía.");
+}
+
 // JSON.parse() convierte el string JSON en un objeto JavaScript
 const serviceAccount = JSON.parse(serviceAccountJson);
 
 admin.initializeApp({ // Inicializamos la app con el metodo initializeApp de admin
     credential: admin.credential.cert(serviceAccount), // Validamos la credencial con admin.credential.cert del JSON serviceAccount
-    databaseURL: process.env.DATABASE_URL // Y le pasamos la url de la database de firebase
+    databaseURL: databaseUrl // Y le pasamos la url de la database de firebase
 });
 
 const firestore = admin.firestore(); // Guardamos el metodo firestore de admin en una variable
