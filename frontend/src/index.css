@@ -1,0 +1,33 @@
+:root{
+    --roboto-font: 'Roboto', sans-serif;
+    --title-size: clamp(45px, 6vw, 52px);
+    --text-size: 24px;
+
+    --main-bg: #0D0D0D;
+    --card-bg: #1B1B1B;
+    --input-bg: #292929;
+    --border-color: #3D3D3D;
+
+    --primary-color: #E63946;
+    --secondary-color: #450E14;
+    --tertiary-color: #6A1A1A;
+
+    /* Colores de Mensajes */
+    --message-own: var(--primary-color); /* Burbuja propia (Rojo Brillante) */
+    --message-other: var(--card-bg);    /* Burbuja de terceros (Borgoña claro) */
+
+    /* Colores de Texto */
+    --text-primary: #EBEBEB;     /* Texto principal */
+    --text-secondary: #B0B0B0;   /* Texto secundario */
+    --text-on-primary: #FFFFFF;
+}
+
+#root{
+    background-color: var(--main-bg);
+}
+
+@media (max-width: 370px) {
+    #root{
+        display: none;
+    }
+}
