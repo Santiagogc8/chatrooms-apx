@@ -3,6 +3,7 @@
         "target": "esnext",
         "moduleResolution": "node",
         "resolveJsonModule": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "outDir": "./dist_server"
     }
 }
