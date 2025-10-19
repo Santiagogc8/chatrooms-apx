@@ -1,4 +1,4 @@
-import { firestore, rtdb } from './database'; // Hacemos la importacion de firestore y la realtime database
+import { firestore, rtdb } from './database.js'; // Hacemos la importacion de firestore y la realtime database
 import express from 'express'; // Hacemos la importacion de express
 import cors from 'cors'; // Importamos cors para que no tengamos problemas con la conexion en local
 import { nanoid } from 'nanoid'; // Importamos nano id para nuestros id
