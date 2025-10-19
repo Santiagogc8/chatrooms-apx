@@ -1,6 +1,6 @@
 // Instalamos la libreria firebase-admin
-import 'dotenv/config'
-import * as admin from "firebase-admin"; // La importamos
+require('dotenv').config();
+const admin = require('firebase-admin'); // La importamos
 
 // Cargamos el contenido JSON del secreto de Render
 const serviceAccountJson = process.env.FIREBASE_KEY_JSON;
