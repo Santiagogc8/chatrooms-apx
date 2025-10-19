@@ -12,6 +12,13 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.18.3",
+  "devDependencies": {
+    "typescript": "^5.x.x",
+    "@types/node": "^20.x.x",
+    "@types/express": "^4.x.x",
+    "@types/cors": "^2.x.x",
+    "@types/firebase-admin": "^11.x.x"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
